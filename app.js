@@ -1,10 +1,9 @@
-function total(n1, n2) {
-    if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-        throw new Error('Incorect input!');
-    }
-    return n1 + n2;
-}
-var number3 = 15;
-var number4 = 20;
-var back = total(number3, number4);
-console.log(back);
+var person = {
+    name: 'Godwin',
+    age: 20,
+    country: 'Kenya'
+};
+var Address = function (person) {
+    return "".concat(person.name, " is ").concat(person.age, " years old and lives in ").concat(person.country);
+};
+console.log(Address);
